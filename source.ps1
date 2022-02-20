@@ -157,4 +157,3 @@ function Convert-BinoctBindec {
 # Точка старта скрипта
 Convert-BinoctBindec($number)
 
-
