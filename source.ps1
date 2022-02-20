@@ -142,6 +142,7 @@ function Convert-BinoctBindec {
     try {
         [string]$Local:out = $num
         Approve-Number($out)
+        $num = $num.Replace(' ', '')
         $out = Convert-BinoctDec($num)
         Write-Host 'Number in decimal notation:' $out
         $out = Convert-DecBindec($out)
@@ -155,4 +156,5 @@ function Convert-BinoctBindec {
 
 # Точка старта скрипта
 Convert-BinoctBindec($number)
+
 
